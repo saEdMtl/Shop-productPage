@@ -1398,6 +1398,10 @@ body {
 
 @media screen and (max-width: 540px) {
 
+    .web-menu-section .hamburger-nav{
+        right: 70%;
+    }
+
     .web-menu-section .first-line .right .search-box input {
         width: 280px;
     }
