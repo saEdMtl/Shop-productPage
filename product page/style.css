@@ -44,6 +44,7 @@ body {
     background-color: white;
     color: #425664;
     font-family: estedad;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
 }
 
 .web-header-fixed {
@@ -59,6 +60,7 @@ body {
     animation-duration: 1s;
     animation-fill-mode: backwards;
     z-index: 100;
+    margin-top: -50px;
 }
 
 .web-menu-section .first-line .first-row {
@@ -421,73 +423,272 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
-.web-slider-section {
-    height: 60vh;
+.web-product-section {
+    margin-top: 50px;
 }
 
-.web-slider-section .right {
-    width: 100%;
-    height: 100%;
-}
-
-.web-slider-section .right ol {
-    bottom: 0;
-}
-
-.web-slider-section .right li {
-    background-color: #f6f4f2;
+.web-product-section .left {
+    background-color: rgb(221, 221, 221);
     border-radius: 5px;
-    height: 4px;
+    height: 35vh;
+    padding: 20px;
 }
 
-.web-slider-section .right .web-heading {
+.web-product-section .left .top h4 {
     text-align: right;
-}
-
-.web-slider-section .right .web-heading h1 {
     color: #c5a47c;
-    font-family: mikhak;
-    font-size: 40px;
-    font-weight: bold;
-
-}
-
-.web-slider-section .right .web-heading p {
-    color: #425664;
+    text-decoration: none;
     font-family: estedad;
     font-size: 15px;
 }
 
-.web-slider-section .right .web-heading a {
-    background-color: transparent;
+.web-product-section .left .top i {
+    text-align: right;
+    color: #c5a47c;
+    text-decoration: none;
     font-family: estedad;
-    font-size: 16px;
+    display: inline-block;
+    font-size: 15px;
+    top: 7px;
+}
+
+.web-product-section .left .center h4 {
+    text-align: right;
     color: #425664;
-    border: solid 3px #c5a47c;
-    transition: all .4s;
+    text-decoration: none;
+    font-family: mikhak;
+    font-size: 15px;
+    padding: 10px 0;
 }
 
-.web-slider-section .right .web-heading a:hover {
-    background-color: #c5a47c;
+.web-product-section .left .bottom h4 {
+    text-align: right;
+    text-decoration: none;
+    font-family: estedad;
+    color: #425664;
+    font-size: 15px;
+    padding: 10px 0;
 }
 
-.web-slider-section .right img {
-    height: 60vh;
-    width: 100%;
-}
-
-.web-ad-section {
-    width: 100%;
-    height: 18vh;
+.web-product-section .left .bottom .discount {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.web-ad-section img {
+.web-product-section .left .bottom .discount h4 {
+    background-color: #d35252;
+    color: #f6f4f2;
+    font-family: mikhak;
+    border-radius: 4px;
+    padding: 5px 5px;
+}
+
+.web-product-section .left .bottom .discount h6 {
+    color: #425664;
+    font-family: mikhak;
+    margin: 7px 10px;
+}
+
+.web-product-section .left .bottom strong {
+    color: #425664;
+    font-family: estedad;
+    font-size: 20px;
+}
+
+.web-product-section .center {
+    text-align: right;
+}
+
+.web-product-section .center .brand {
+    display: flex;
+    text-align: right;
+}
+
+.web-product-section .center strong {
+    font-size: 30px;
+    font-weight: bold;
+    color: #d35252;
+    position: relative;
+    right: -46%;
+}
+
+.web-product-section .center h6 {
+    font-size: 14px;
+    font-family: estedad;
+    color: #425664;
+    position: relative;
+    right: -42%;
+    margin-top: 15px;
+}
+
+.web-product-section .center hr {
+    margin: 0;
+}
+
+.web-product-section .center .customers {
+    display: flex;
+    text-align: right;
+}
+
+.web-product-section .center .customers h5 {
+    font-size: 11px;
+    font-family: estedad;
+    color: #c5a47c;
+    margin-left: 10px;
+    position: relative;
+    left: 4%;
+}
+
+.web-product-section .center .customers i {
+    position: relative;
+    left: 4.5%;
+    font-size: 12px;
+}
+
+.web-product-section .center .customers a {
+    font-size: 11px;
+    text-decoration: none;
+    font-family: estedad;
+    color: #425664;
+}
+
+.web-product-section .center .customers a:hover {
+    color: #c5a47c;
+}
+
+.web-product-section .center .color {
+    display: flex;
+}
+
+.web-product-section .center .color h3 {
+    color: #425664;
+    font-size: 18px;
+    font-family: estedad;
+}
+
+.web-product-section .center .color {
+    right: -50%;
+    position: relative;
+}
+
+.web-product-section .center .color input {
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+.web-product-section .center .event {
+    border: 1px solid #d35252;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 5px;
+    position: relative;
+    right: -2%;
+}
+
+.web-product-section .center .event h4 {
+    font-family: mikhak;
+    font-size: 20px;
+    color: #c5a47c;
+    margin-bottom: -15px;
+}
+
+.web-product-section .center .event p {
+    font-family: estedad;
+    font-size: 12px;
+    color: #425664;
+}
+
+.web-product-section .right img {
     width: 100%;
-    height: 18vh;
-    margin-top: 25px;
+    height: 40vh;
+    border-radius: 3px;
+}
+
+.web-product-section button {
+    width: 100%;
+    height: 7vh;
+    font-family: mikhak;
+    background-color: #d35252;
+    padding: 5px;
+    border-radius: 5px;
+    color: #f6f4f2;
+    transition: all .5s;
+}
+
+.web-product-section .buy #i {
+    position: relative;
+    left: 4.5%;
+}
+
+.web-product-section button:hover {
+    transform: scale(1.05);
+}
+
+.web-product-section .left-replace {
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
+    height: 40vh;
+    padding: 20px;
+    display: none;
+}
+
+.web-product-section .left-replace .top h4 {
+    text-align: right;
+    color: #c5a47c;
+    text-decoration: none;
+    font-family: estedad;
+    font-size: 15px;
+}
+
+.web-product-section .left-replace .top i {
+    text-align: right;
+    color: #c5a47c;
+    text-decoration: none;
+    font-family: estedad;
+    display: inline-block;
+    font-size: 15px;
+    top: 7px;
+}
+
+.web-product-section .left-replace .center h4 {
+    text-align: right;
+    color: #425664;
+    text-decoration: none;
+    font-family: mikhak;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.web-product-section .left-replace .bottom h4 {
+    text-align: right;
+    text-decoration: none;
+    font-family: estedad;
+    color: #425664;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.web-product-section .left-replace .bottom .discount {
+    display: flex;
+}
+
+.web-product-section .left-replace .bottom .discount h4 {
+    background-color: #d35252;
+    color: #f6f4f2;
+    font-family: mikhak;
+    border-radius: 4px;
+    padding: 5px 5px;
+}
+
+.web-product-section .left-replace .bottom .discount h6 {
+    color: #425664;
+    font-family: mikhak;
+    margin: 7px 10px;
+}
+
+.web-product-section .left-replace .bottom strong {
+    color: #425664;
+    font-family: estedad;
+    font-size: 20px;
 }
 
 .web-swiper-section {
@@ -559,6 +760,7 @@ body {
 .web-swiper-section .right h4 {
     font-size: 30px;
     font-family: mikhak;
+    font-weight: bold;
     color: #c5a47c;
 }
 
@@ -576,361 +778,255 @@ body {
     color: #f6f4f2;
 }
 
-.web-second-swiper-section {
+.web-tab-section {
+    height: 60vh;
     margin-top: 30px;
-    height: 240px;
-    background-color: transparent;
-    -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
-.web-second-swiper-section .row {
-    justify-content: center;
-    align-items: center;
-}
-
-.web-second-swiper-section .swiper {
-    width: 100%;
-    height: 240px;
-}
-
-.web-second-swiper-section .swiper .swiper-slide {
-    cursor: pointer;
-    transition: all .4s;
-}
-
-.web-second-swiper-section .swiper .swiper-slide:hover {
-    transform: scale(1.1);
-}
-
-.web-second-swiper-section .swiper .swiper-slide .card {
-    margin-top: 40px;
+.web-tab-section ul {
+    float: right;
     border: 0;
 }
 
-.web-second-swiper-section .swiper .swiper-slide .card-body {
-    border: 0;
-    text-align: center;
-}
-
-.web-second-swiper-section .swiper .swiper-slide img {
-    width: 100%;
-    height: 100px;
-}
-
-.web-second-swiper-section .swiper .swiper-slide h4 {
-    font-size: 17px;
+.web-tab-section ul li .nav-link {
+    text-decoration: none;
+    font-size: 20px;
     font-family: estedad;
+    color: #425664;
+    border: none;
+}
+
+.web-tab-section ul li a:hover {
+    color: #c6ad8f;
+}
+
+.web-tab-section .tab-content {
+    text-align: right;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.web-tab-section .tab-content #first-tab h4 {
+    font-size: 20px;
+    font-family: mikhak;
     font-weight: bold;
     color: #d35252;
 }
 
-.web-second-swiper-section .right .card {
-    text-align: center;
-    border: 0;
-}
-
-.web-second-swiper-section .right h2 {
-    color: #c5a47c;
-    margin: auto;
-    font-size: 30px;
-}
-
-.web-second-swiper-section .right h4 {
-    font-size: 20px;
-    font-family: mikhak;
+.web-tab-section .tab-content #first-tab p {
+    font-size: 16px;
+    font-family: estedad;
     color: #425664;
 }
 
-.web-second-swiper-section .right button {
-    background-color: transparent;
-    border: solid 3px #c5a47c;
-    color: #c5a47c;
+.web-tab-section .tab-content #second-tab {
+    text-align: right;
+}
+
+.web-tab-section .tab-content #second-tab .right {
+    direction: rtl;
+    transform: translate(750px, 55px);
+    width: 20vw;
+}
+
+.web-tab-section .tab-content #second-tab h4 {
+    font-size: 20px;
+    font-family: mikhak;
+    font-weight: bold;
+    color: #d35252;
+    margin-bottom: 15px;
+}
+
+.web-tab-section .tab-content #second-tab .Propertie {
+    width: 100%;
+}
+
+.web-tab-section .tab-content #second-tab h6 {
     font-size: 16px;
-    transition: all .4s;
+    font-family: estedad;
+    font-weight: bold;
+    color: #425664;
+    margin-bottom: 15px;
+}
+
+.web-tab-section .tab-content #second-tab .Explanation {
+    width: 100%;
+}
+
+.web-tab-section .tab-content #second-tab h5 {
+    font-size: 16px;
+    font-family: mikhak;
+    color: #c5a47c;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.web-comment-section .left .comment {
+    text-align: right;
+}
+
+.web-comment-section .left h2 {
+    font-size: 20px;
+    font-family: mikhak;
+    font-weight: bold;
+    color: #d35252;
+    text-align: right;
+}
+
+.web-comment-section .left .comment h4 {
+    font-size: 14px;
+    font-family: mikhak;
+    color: #c5a47c;
+    font-weight: normal;
+}
+
+.web-comment-section .left .comment p {
+    font-size: 10px;
+    font-family: mikhak;
+    color: #425664;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.web-comment-section .left .comment h6 {
+    font-size: 14px;
+    font-family: estedad;
+    color: #425664;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.web-comment-section .left .feedback {
+    text-align: left;
+}
+
+.web-comment-section .left .feedback a {
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.web-comment-section .left .feedback span {
+    color: #425664;
+    font-size: 16px;
+    margin-right: 10px;
+    position: relative;
+    top: -4px;
+}
+
+.web-comment-section .left .feedback i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.web-comment-section .right {
+    text-align: right;
+}
+
+.web-comment-section .right .point h3 {
+    color: #425664;
+    font-family: mikhak;
+    font-size: 15px;
+}
+
+.web-comment-section .right .point span {
+    color: #d35252;
+    font-family: mikhak;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.web-comment-section .right .discription p {
+    color: #c5a47c;
+    font-family: estedad;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.web-comment-section .right h4 {
+    color: #425664;
     font-family: estedad;
     font-size: 18px;
 }
 
-.web-second-swiper-section .right button:hover {
-    background-color: #c5a47c;
-    color: #f6f4f2;
+.web-comment-section .right .bar {
+    margin-bottom: 20px;
 }
 
-.web-card-section {
-    width: 100%;
-    height: 38vh;
-    margin-top: 50px;
-}
-
-.web-card-section .left {
-    width: 90%;
-    height: 30vh;
-    border-radius: 30% 0 0 0;
-    border: solid 3px #425664;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.web-comment-section .right .commenting {
+    margin-top: 65px;
     text-align: right;
 }
 
-.web-card-section .left .card-img {
-    width: 40%;
-    height: 200px;
-}
-
-.web-card-section .left h4 {
-    font-family: estedad;
-    font-weight: bold;
-    font-size: 25px;
+.web-comment-section .right .commenting h6 {
     color: #425664;
-    margin-bottom: 15px;
-}
-
-.web-card-section .left button {
     font-family: estedad;
-    font-size: 16px;
-    background-color: #425664;
-    color: #f6f4f2;
-    transition: all .4s;
+    font-size: 18px;
 }
 
-.web-card-section .left button:hover {
-    color: #c6ad8f;
-}
-
-.web-card-section .left img {
-    width: 80%;
-    height: 65%;
-    border-radius: 40%;
-    margin-top: 10px;
-    left: -30%;
-    top: 10%;
-    position: relative;
-}
-
-.web-card-section .right {
-    width: 90%;
-    height: 30vh;
-    border-radius: 0 0 30% 0;
-    border: solid 3px #425664;
-    border-left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: right;
-}
-
-.web-card-section .right .card-img {
-    width: 40%;
-    height: 200px;
-}
-
-.web-card-section .right img {
-    width: 80%;
-    height: 80%;
-    border-radius: 40%;
-    left: -35%;
-    top: 10%;
-    position: relative;
-}
-
-.web-card-section .right h4 {
-    font-family: estedad;
-    font-weight: bold;
-    font-size: 25px;
-    color: #425664;
-    margin-bottom: 15px;
-}
-
-.web-card-section .right button {
-    font-family: estedad;
-    font-size: 16px;
-    background-color: #425664;
-    color: #f6f4f2;
-    transition: all .4s;
-}
-
-.web-card-section .right button:hover {
-    color: #c6ad8f;
-}
-
-.web-club-section {
-    background-color: rgb(245, 245, 245);
-    width: 100%;
-    height: 70vh;
-    -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
-}
-
-.web-club-section .left {
-    width: 100%;
-    height: 60vh;
-}
-
-.web-club-section .left img {
-    width: 100%;
-    height: 100%;
-    margin-top: 20px
-}
-
-.web-club-section .right {
-    text-align: center;
-    margin-top: 135px;
-}
-
-.web-club-section .right h2 {
-    font-family: estedad;
-    font-weight: bold;
-    font-size: 30px;
-    color: #425664;
-    margin-bottom: 15px;
-}
-
-.web-club-section .right h4 {
+.web-comment-section .right .commenting button {
+    color: #d35252;
     font-family: mikhak;
-    font-size: 25px;
-    color: #c5a47c;
-    margin-bottom: 15px;
-}
-
-.web-club-section .right span {
-    font-family: mikhak;
-    font-size: 25px;
-    color: #c5a47c;
-}
-
-.web-club-section .right p {
-    font-family: estedad;
-    font-size: 16px;
-    color: #425664;
-    margin-bottom: 15px;
-}
-
-.web-club-section .right button {
+    font-size: 18px;
     background-color: transparent;
-    font-family: estedad;
-    font-size: 20px;
-    color: #425664;
-    border: solid 3px #c5a47c;
-    transition: all .4s;
-}
-
-.web-club-section .right button:hover {
-    background-color: #c5a47c;
-}
-
-.web-about-section {
-    margin-top: 60px;
-    width: 100%;
-    height: 20vh;
-}
-
-.web-about-section .row {
-    margin-left: 135px;
-}
-
-.web-about-section .first {
-    padding: 5px;
-    text-align: center;
-    display: flex;
-}
-
-.web-about-section .first .left {
-    height: 100px;
-}
-
-.web-about-section .first .left img {
-    height: 100%;
-    width: 100%;
-    top: -15%;
-    position: relative;
-    left: -5%;
-}
-
-.web-about-section .first .right p {
-    font-family: estedad;
-    font-size: 15px;
-    color: #425664c5;
-}
-
-.web-about-section .first .right h4 {
-    font-family: estedad;
-    font-size: 30px;
-    color: #c5a47c;
-}
-
-.web-about-section .second {
-    right: 0%;
-}
-
-.web-about-section .second .right p {
-    font-family: estedad;
-    font-size: 20px;
-    color: #425664c5;
-}
-
-.web-event-section {
-    height: 70vh;
-    width: 100%;
-    -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.web-event-section .container {
     margin-top: 20px;
-}
-
-.web-event-section .p h4 {
-    font-family: mikhak;
-    font-size: 30px;
-    font-weight: bold;
-    color: #c5a47c;
-    padding-top: 30px
-}
-
-.web-event-section .card-body {
-    background-color: rgb(245, 245, 245);
-
-}
-
-.web-event-section .card img {
+    border: 2px solid #d35252;
+    padding: 10px;
+    border-radius: 5px;
     width: 100%;
-    height: 200px;
 }
 
-.web-event-section .card-body h4 {
-    font-family: estedad;
-    font-size: 22px;
-    color: #425664;
-}
-
-.web-event-section .card-body button {
-    font-family: estedad;
-    font-size: 15px;
-    color: #425664;
-    background-color: transparent;
-    border: solid 3px #c5a47c;
-    transition: all .4s;
-}
-
-.web-event-section .card-body button:hover {
-    background-color: #c5a47c;
-}
-
-.web-event-section .buttons button {
-    font-family: estedad;
-    font-size: 15px;
+.web-comment-section .right .commenting button:hover {
     color: #f6f4f2;
-    background-color: #425664;
-    margin: 20px;
-    transition: all .4s;
+    background-color: #d35252;
 }
 
-.web-event-section .buttons button:hover {
-    color: #c6ad8f;
+.web-comment-section .right .sign-in {
+    padding: 20px;
+    border: 1.5px solid #d35252;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+    transition: all 1s;
+}
+
+.web-comment-section .right .sign-in h4 {
+    font-size: 13px;
+    font-family: estedad;
+    font-weight: bold;
+    color: #d35252;
+    margin-bottom: 20px;
+}
+
+.web-comment-section .right .sign-in h6 {
+    font-size: 12px;
+    font-family: mikhak;
+    color: #425664;
+}
+
+.web-comment-section .right .sign-in input {
+    width: 250px;
+    height: 30px;
+    border: 2px solid #c5a47c;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.web-comment-section .right .sign-in .enter {
+    background-color: #c5a47c;
+    color: #f6f4f2;
+    font-size: 16px;
+    font-family: mikhak;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.web-comment-section .right .sign-in #eror {
+    margin-top: 15px;
+    font-family: mikhak;
+    color: #d35252;
+    font-size: 12px;
 }
 
 .web-footer-section {
@@ -1061,17 +1157,17 @@ body {
     margin-bottom: 0;
 }
 
-@media screen and (max-width:1500px){
+@media screen and (max-width:1500px) {
 
-    .web-nav-section .nav .column{
+    .web-nav-section .nav .column {
         margin: 0 70px;
     }
 
 }
 
-@media screen and (max-width:1500px){
+@media screen and (max-width:1500px) {
 
-    .web-nav-section .nav .column{
+    .web-nav-section .nav .column {
         margin: 0 50px;
     }
 
@@ -1090,35 +1186,34 @@ body {
         width: 410px;
     }
 
-    .web-swiper-section .right h4 {
-        font-size: 25px;
+    .web-product-section .center .customers a {
+        font-size: 8px;
     }
 
-    .web-swiper-section .right button {
-        font-size: 12px;
+    .web-product-section .center .customers h5 {
+        font-size: 9px;
     }
 
-    .web-swiper-section .right .card {
-        margin-top: 40px;
+    .web-tab-section {
+        margin-bottom: 40px;
     }
 
-    .web-second-swiper-section .right h2 {
-        font-size: 24px;
-    }
-
-    .web-second-swiper-section .right h4 {
-        font-size: 18px;
-    }
-
-    .web-second-swiper-section .right button {
-        font-size: 12px;
+    .web-tab-section .tab-content #second-tab .right {
+        transform: translate(685px, 55px);
     }
 
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1107px) {
 
-    .web-nav-section .nav .column{
+    .web-tab-section .tab-content #second-tab h5 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .web-nav-section .nav .column {
         margin: 0 40px;
     }
 
@@ -1204,67 +1299,69 @@ body {
         font-size: 12px;
     }
 
-    .web-menu-section .second-line .left-replace button {
-        width: 166px;
+    .web-product-section .center strong {
+        right: -23%;
     }
 
-    .web-card-section {
-        height: 35vh;
+    .web-product-section .center h6 {
+        right: -20%;
     }
 
-    .web-card-section .right,
-    .web-card-section .left {
-        height: 27vh;
+    .web-product-section .center .color {
+        right: -23%;
     }
 
-    .web-card-section .right h4,
-    .web-card-section .left h4 {
-        font-size: 20px;
-    }
-
-    .web-card-section .right button,
-    .web-card-section .left button {
-        font-size: 14px;
-    }
-
-    .web-club-section {
-        height: 60vh;
-    }
-
-    .web-club-section .left {
-        height: 50vh;
-    }
-
-    .web-club-section .right {
-        margin-top: 95px;
-    }
-
-    .web-club-section .right h2 {
-        font-size: 23px;
-    }
-
-    .web-club-section .right h4 {
-        font-size: 22px;
-    }
-
-    .web-club-section .right p {
-        font-size: 14px;
-    }
-
-    .web-club-section .right button {
+    .web-product-section .center .color {
         font-size: 17px;
     }
 
-    .web-about-section .row {
-        margin-left: 50px;
+    .web-product-section .center .event h4 {
+        font-size: 17px;
     }
 
-    .web-event-section .p h4 {
-        font-size: 26px;
+    .web-product-section .left .top h4 {
+        font-size: 12px;
     }
 
-    .web-event-section .card-body button {
+    .web-product-section .left .bottom h4 {
         font-size: 14px;
+    }
+
+    .web-product-section .center .color input {
+        margin-top: -5px;
+    }
+
+    .web-tab-section .tab-content #second-tab .right {
+        transform: translate(490px, 55px);
+    }
+
+    .web-tab-section .tab-content #first-tab p {
+        font-size: 14px;
+    }
+
+    .web-swiper-section .right h4 {
+        font-size: 24px;
+    }
+
+    .web-comment-section .right .discription p {
+        font-size: 12px;
+    }
+
+    .web-comment-section .right h4 {
+        font-size: 15px;
+    }
+
+    .web-comment-section .right .commenting h6 {
+        font-size: 13px;
+    }
+
+    .web-comment-section .right .commenting button {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .web-comment-section .right .sign-in input {
+        width: 185px;
     }
 
     .web-footer-section strong {
@@ -1302,7 +1399,6 @@ body {
     .web-footer-section .second p {
         font-size: 11px;
     }
-
 }
 
 @media screen and (max-width:767px) {
@@ -1331,73 +1427,87 @@ body {
         margin-right: 7px;
     }
 
-    .web-slider-section {
-        height: 50vh;
+    .web-product-section .center .customers h5 {
+        font-size: 10px
     }
 
-    .web-slider-section .right img {
-        height: 45vh;
+    .web-product-section .center .customers a {
+        font-size: 10px;
     }
 
-    .web-ad-section {
-        height: 30vh;
+    .web-product-section .left {
+        display: none;
     }
 
-    .web-ad-section img {
-        height: 15vh;
+    .web-product-section .left-replace {
+        display: block;
+        margin-top: 20px;
     }
 
-    .web-swiper-section .right .svg-inline--fa {
-        font-size: 40px;
+    .web-product-section .center strong {
+        right: -60%;
     }
 
-    .web-swiper-section .right h4 {
-        font-size: 22px;
+    .web-product-section .center h6 {
+        right: -58%;
     }
 
-    .web-card-section {
-        height: 61vh;
+    .web-product-section .center .customers {
+        position: relative;
+        right: -29%;
     }
 
-    .web-card-section .right {
-        border-left: solid 3px #425664;
-        border-top: 0;
+    .web-product-section .center .color {
+        right: -63%;
     }
 
-    .web-club-section {
-        height: 100vh;
+    .web-product-section .right img {
+        margin-top: 10px;
     }
 
-    .web-club-section .right:nth-child(1) {
-        display: inline-block !important;
+    .web-tab-section .tab-content #second-tab .right {
+        transform: translate(355px, 55px);
     }
 
-    .web-club-section .right {
-        display: none !important;
-        margin-top: 45px;
+    .web-tab-section .tab-content #second-tab h6 {
+        font-size: 13px;
     }
 
-    .web-about-section {
-        height: 33vh;
+    .web-tab-section .tab-content #second-tab h5 {
+        font-size: 13px;
     }
 
-    .web-event-section {
-        height: 170vh;
+    .web-comment-section .left .comment h6 {
+        font-size: 12px;
     }
 
-    .web-event-section .card {
-        margin-bottom: 20px;
+    .web-comment-section .right .sign-in input{
+        width: 60%;
+    }
+
+    .web-comment-section .right .sign-in {
+        width: 100%;
+    }
+
+    .web-comment-section .right .sign-in .enter {
+        display: block;
+        position: relative;
+        width: 60%;
+        margin-left: auto;
+    }
+
+    .web-comment-section .right .commenting button{
+        margin-bottom: 30px;
     }
 
     .web-footer-section .section:nth-child(2) {
         margin-top: 65px;
     }
-
 }
 
 @media screen and (max-width: 540px) {
 
-    .web-menu-section .hamburger-nav{
+    .web-menu-section .hamburger-nav {
         right: 70%;
     }
 
@@ -1412,55 +1522,6 @@ body {
     .web-menu-section .second-line .left-replace i {
         font-size: 19px;
     }
-
-    .web-swiper-section .swiper .swiper-slide h4 {
-        font-size: 14px;
-    }
-
-    .web-swiper-section .swiper .swiper-slide p {
-        font-size: 14px;
-    }
-
-    .web-club-section .right h2 {
-        font-size: 20px;
-    }
-
-    .web-club-section .right h4 {
-        font-size: 20px;
-    }
-
-    .web-club-section .right p {
-        font-size: 12px;
-    }
-
-    .web-club-section .right button {
-        font-size: 14px;
-    }
-
-    .web-club-section {
-        height: 90vh;
-    }
-
-    .web-about-section .first .left img {
-        height: 85%;
-    }
-
-    .web-about-section .first .right h4 {
-        font-size: 21px;
-    }
-
-    .web-event-section .card-body h4 {
-        font-size: 19px;
-    }
-
-    .web-event-section .card-body button {
-        font-size: 13px;
-    }
-
-    .web-footer-section {
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-    }
-
 }
 
 @media screen and (max-width: 540px) {
@@ -1491,6 +1552,22 @@ body {
         width: 270px;
     }
 
+    .web-swiper-section .swiper .swiper-slide h4 {
+        font-size: 11px;
+    }
+
+    .web-swiper-section .swiper .swiper-slide p {
+        font-size: 13px;
+    }
+
+    .web-comment-section .right .commenting {
+        margin-bottom: 30px;
+    }
+
+    .web-footer-section {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
 }
 
 @media screen and (max-width: 495px) {
@@ -1515,16 +1592,23 @@ body {
         right: -30px;
     }
 
-    .web-swiper-section .right h4 {
-        font-size: 20px;
+    .web-product-section .center strong {
+        right: -57%;
     }
 
-    .web-second-swiper-section .right button {
-        font-size: 10px;
+    .web-product-section .center h6 {
+        right: -55%;
+    }
+
+    .web-product-section .center .color {
+        right: -60%;
+    }
+
+    .web-product-section .center .customers {
+        right: -23%;
     }
 
 }
-
 
 @media screen and (max-width: 460px) {
 
@@ -1540,6 +1624,10 @@ body {
         font-size: 12px;
     }
 
+    .web-product-section .center .customers {
+        right: -20%;
+    }
+
 }
 
 @media screen and (max-width: 460px) {
@@ -1549,7 +1637,66 @@ body {
     }
 
     .web-swiper-section .right h4 {
-        font-size: 18px;
+        font-size: 21px
+    }
+
+    .web-swiper-section .swiper .swiper-slide h4 {
+        font-size: 9px;
+    }
+
+    .web-swiper-section .swiper .swiper-slide p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .web-menu-section .second-line .left-replace {
+        right: -26px;
+    }
+
+    .web-product-section .center strong {
+        right: -54%;
+    }
+
+    .web-product-section .center h6 {
+        right: -51%;
+    }
+
+    .web-product-section .center .color {
+        right: -56%;
+    }
+
+    .web-product-section .center .customers {
+        right: -16%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .web-menu-section .second-line .left-replace {
+        right: -20px;
+    }
+
+    .web-product-section .center strong {
+        right: -48%;
+    }
+
+    .web-product-section .center h6 {
+        right: -45%;
+    }
+
+    .web-product-section .center .color {
+        right: -50%;
+    }
+
+    .web-product-section .center .customers {
+        right: -8%;
+    }
+
+    .web-swiper-section .right h4 {
+        font-size: 20px
     }
 
 }

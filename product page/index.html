@@ -3,17 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
     <link href='https://css.gg/search.css' rel='stylesheet'>
+    <link href='https://css.gg/check-o.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/animate.css">
 </head>
 
-<body>
+<body onload="active()">
 
     <!-- start web menu section -->
     <div class="web-menu-section">
@@ -218,73 +223,89 @@
     </div>
     <!-- end web menu section -->
 
-    <!-- start web slider section -->
-    <div class="web-slider-section">
+    <!-- start web product section -->
+    <div class="web-product-section">
         <div class="container">
             <div class="row">
-                <div class="right col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div id="web-slider-section" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#web-slider-section" data-slide-to="0" class="active"></li>
-                            <li data-target="#web-slider-section" data-slide-to="1"></li>
-                            <li data-target="#web-slider-section" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                                        <div class="web-heading">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <a href="#"><img src="images/Artboard 18@2x.png" class="img-fluid"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                                        <div class="web-heading">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <a href="#"><img src="images/Artboard 19@2x.png" class="img-fluid"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                                        <div class="web-heading">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <a href="#"><img src="images/Artboard 20@2x.png" class="img-fluid"></a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="left col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="top">
+                        <h4>گارانتی اصالت و سلامت فیزیکی کالا <i class="gg-check-o"></i>
+                        </h4>
+                        <hr>
+                    </div>
+                    <div class="center">
+                        <h4> موجود در انبار دیجی کالا <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        </h4>
+                        <hr>
+                    </div>
+                    <div class="bottom">
+                        <h4>بهترین قیمت سی روز گذشته</h4>
+                        <div class="discount">
+                            <h4><del>340000</del></h4>
+                            <h6>35%</h6>
                         </div>
+                        <strong>221000</strong>
+                    </div>
+                    <div class="buy">
+                        <button>افزودن به سبد خرید<i class="fa fa-shopping-basket" aria-hidden="true"
+                                id="i"></i></button>
+                    </div>
+                </div>
+                <div class="center col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="brand">
+                        <h6><span> k54 </span><span> مدل </span><span>asus </span> موس</h6><br>
+                        <strong>Asus</strong>
+                        <hr>
+                    </div>
+                    <div class="customers">
+                        <a href="#">نظرات کاربران</a>
+                        <h5>امتیاز کاربران <span>4.4</span></h5>
+                        <i class="material-icons">star_border</i>
+                        <h5>از مشتریان این کالا را پسند کردند</span><span><span>%</span>96</span><span></span> </h5><br>
+                        <i class="material-icons">thumb_up</i>
+                    </div>
+                    <div class="color">
+                        <input type="checkbox">
+                        <h3>:مشکی</h3>
+                        <input type="checkbox">
+                        <h3>:سفید</h3>
+                    </div>
+                    <div class="event">
+                        <h4>!جشنواره کامنت</h4><br>
+                        <p>از <span>20</span>آذر تا آخر آذر با هر کامنت نیم درصد تخفیف بگیرید</p>
+                    </div>
+                </div>
+                <div class="right col-lg-4 col-md-4 col-sm-12 col-12">
+                    <img src="images/purple-computer-mouse-min.jpg" alt="mouse">
+                </div>
+                <div class="left-replace col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="top">
+                        <h4>گارانتی اصالت و سلامت فیزیکی کالا <i class="gg-check-o"></i>
+                        </h4>
+                        <hr>
+                    </div>
+                    <div class="center">
+                        <h4> موجود در انبار دیجی کالا <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        </h4>
+                        <hr>
+                    </div>
+                    <div class="bottom">
+                        <h4>بهترین قیمت سی روز گذشته</h4>
+                        <div class="discount">
+                            <h4><del>340000</del></h4>
+                            <h6>35%</h6>
+                        </div>
+                        <strong>221000</strong>
+                    </div>
+                    <div class="buy">
+                        <button>افزودن به سبد خرید<i class="fa fa-shopping-basket" aria-hidden="true"
+                                id="i"></i></button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end web slider section -->
-
-    <!-- start web ad section -->
-    <div class="web-ad-section">
-        <div class="container">
-            <div class="row">
-                <div class="left col-lg-6 col-md 6 col-sm-12 col-12">
-                    <a href="#"><img src="images/Artboard 21@2x.png"></a>
-                </div>
-                <div class="left col-lg-6 col-md 6 col-sm-12 col-12">
-                    <a href="#"><img src="images/Artboard 22@2x.png"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end web ad section -->
+    <!-- end web product section -->
 
     <!-- start web swiper section  -->
     <div class="web-swiper-section">
@@ -294,8 +315,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="images/compressjpeg (2)/close-up-small-white-paver-bank-min.jpg"
-                                    class="card-img-top">
+                                <img src="images/frankie-VghbBAYqUJ0-unsplash-min.jpg" class="card-img-top">
                                 <div class="card-body">
                                     <h4 class="card-title">
                                         Apple پاور بانک
@@ -308,7 +328,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="images/compressjpeg (2)/wireless-mouse-keyboard-min.jpg" class="card-img-top">
+                                <img src="images/oscar-ivan-esquivel-arteaga-ZtxED1cpB1E-unsplash-min.jpg"
+                                    class="card-img-top">
                                 <div class="card-body">
                                     <h4 class="card-title">
                                         Sony کیبورد
@@ -321,8 +342,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="images/compressjpeg (2)/usb-cable-type-c-white-isolated-background-min.jpg"
-                                    class="card-img-top">
+                                <img src="images/red-computer-mouse-min.jpg" class="card-img-top">
                                 <div class="card-body">
                                     <h4 class="card-title">
                                         Samsung کابل شارژ
@@ -335,8 +355,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="images/compressjpeg (2)/smartphone-with-blank-black-screen-innovative-future-technology-min.jpg"
-                                    class="card-img-top">
+                                <img src="images/ryan-putra-j4PqlNVZ4Bc-unsplash-min.jpg" class="card-img-top">
                                 <div class="card-body">
                                     <h4 class="card-title">
                                         HTC موبایل
@@ -349,7 +368,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="images/compressjpeg (2)/purple-computer-mouse-min.jpg" class="card-img-top">
+                                <img src="images/stefen-tan-ndUby2p2ptY-unsplash-min.jpg" class="card-img-top">
                                 <div class="card-body">
                                     <h4 class="card-title">
                                         Asus موس
@@ -362,7 +381,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="images/compressjpeg (2)/laptop-with-white-screen-isolated-white-wall-min.jpg"
+                                <img src="images/white-wireless-optical-mouse-digital-device-min.jpg"
                                     class="card-img-top">
                                 <div class="card-body">
                                     <h4 class="card-title">
@@ -374,19 +393,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="images/compressjpeg (2)/headphones-audio-listen-min.jpg" class="card-img-top">
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        Motorola هدفون
-                                    </h4>
-                                    <p class="card-text">
-                                        574000
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -396,9 +402,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">
-                            پیشنهادات ویژه
+                            محصولات مرتبط
                         </h4>
-                        <button class="btn btn-primary">مشاهده همه</button>
                     </div>
                 </div>
             </div>
@@ -406,246 +411,204 @@
     </div>
     <!-- end web swiper section  -->
 
-    <!-- start web swiper section  -->
-    <div class="web-second-swiper-section">
-        <div class="row">
-            <div class="left col-lg-10 col-md-10 col-sm-8 col-8">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="images/Artboard 13@4x.png" class="card-img-top">
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        Apple
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="images/Artboard 17@4x.png" class="card-img-top">
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        Sony
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="images/Artboard 11@2x.png" class="card-img-top">
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        Samsung
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="images/Artboard 14@4x.png" class="card-img-top">
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        HTC
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="images/Artboard 12@2x.png" class="card-img-top">
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        Asus
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="images/Artboard 15@4x.png" class="card-img-top">
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        Lenovo
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="images/Artboard 16@4x.png" class="card-img-top">
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        Motorola
-                                    </h4>
-                                </div>
-                            </div>
+    <!-- start web tab section -->
+    <div class="web-tab-section">
+        <div class="container">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a href="#first-tab" data-toggle="tab" aria-selected="true" role="tab" class="nav-link active"
+                        onclick="activeOne()" id="linkone">نقد و بررسی</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#second-tab" data-toggle="tab" aria-selected="false" role="tab" class="nav-link"
+                        onclick="activeTwo()" id="linktwo">مشخصات</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="first-tab" role="tabpanel" class="tab-pane fade show active">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h4>بررسی اجمالی</h4>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                                است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                                فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+                                طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
+                                فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                                موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+                                دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                                گیرد.</p>
                         </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 </div>
-            </div>
-            <div class="right col-lg-2 col-md-2 col-sm-4 col-4">
-                <div class="card">
-                    <h2>Special Brands</h2>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            برند های ویژه </h4>
-                        <button class="btn btn-primary">مشاهده همه</button>
+                <div id="second-tab" role="tabpanel" class="tab-pane fade show">
+                    <div class="right">
+                        <h4>مشخصات کالا</h4>
+                        <div class="row">
+                            <div class="Propertie col-lg-7 col-md-7 col-sm-6 col-6">
+                                <h6>وزن</h6>
+                                <h6>نوع اتصال</h6>
+                                <h6>محدوده دقت</h6>
+                                <h6>نوع حسگر</h6>
+                                <h6>تعداد کلید</h6>
+                                <h6>نوع باتری</h6>
+                                <h6>تعداد باتری</h6>
+                                <h6>جنس رابط</h6>
+                            </div>
+                            <div class="Explanation col-lg-5 col-md-5 col-sm-6 col-6">
+                                <h5>گرم 400</h5>
+                                <h5>بی سیم</h5>
+                                <h5>800 <span>تا </span>1600</h5>
+                                <h5>لیزری</h5>
+                                <h5>2</h5>
+                                <h5>باتری لیتیومی</h5>
+                                <h5>2</h5>
+                                <h5>wireless</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end web swiper section  -->
+    <!-- end web tab section -->
 
-    <!-- start web card section  -->
-    <div class="web-card-section">
+    <!-- start web comment section -->
+    <div class="web-comment-section">
         <div class="container">
             <div class="row">
-                <div class="left col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="card-img">
-                        <img src="images/Artboard 2.png">
-                    </div>
-                    <div class="card-p">
-                        <h4>در صدر بفروش</h4>
-                        <button class="btn">شروع به همکاری</button>
-                    </div>
-                </div>
-                <div class="right col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="card-img">
-                        <img src="images/Artboard 1.png">
-                    </div>
-                    <div class="card-p">
-                        <h4>فروش اقساطی</h4>
-                        <button class="btn">خرید اقساطی</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end web card section  -->
-
-    <!-- start web club section  -->
-    <div class="web-club-section">
-        <div class="container">
-            <div class="row">
-                <div class="right col-lg-5 col-md-5 col-sm-12 col-12" hidden>
-                    <h2>باشگاه مشتریان صدر</h2>
-                    <h4>یک عضویت <span>...</span> هزاران مزیت</h4>
-                    <p> .لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-                        از طراحان گرافیک است</p>
-                    <button class="btn">عضویت</button>
-                </div>
                 <div class="left col-lg-7 col-md-7 col-sm-12 col-12">
-                    <img src="images/Artboard 4@2x.png">
+                    <h2>نظرات مشتریان</h2>
+                    <div class="comment">
+                        <h4>:alireza</h4>
+                        <p>1400 <span>آذر</span> 21</p>
+                        <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                            فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود </h6>
+                    </div>
+                    <div class="feedback">
+                        <i class="material-icons" class="likeone" onclick="likeone()">thumb_up
+                        </i></a><span class="likeone-number">0</span>
+                       <i class="material-icons" class="dislikeone" onclick="dislikeone()"> thumb_down
+                        </i> </a><span class="dislikeone-number">0</span>
+                    </div>
+                    <hr>
+                    <div class="comment">
+                        <h4>:alireza</h4>
+                        <p>1400 <span>آذر</span> 21</p>
+                        <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                            فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود </h6>
+                    </div>
+                    <div class="feedback">
+                        <i class="material-icons" class="liketwo" onclick="liketwo()">thumb_up
+                        </i></a><span class="liketwo-number">0</span>
+                       <i class="material-icons" class="disliketwo"  onclick="disliketwo()">thumb_down
+                        </i> </a><span class="disliketwo-number">0</span>
+                    </div>
+                    <hr>
+                    <div class="comment">
+                        <h4>:alireza</h4>
+                        <p>1400 <span>آذر</span> 21</p>
+                        <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                            فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود </h6>
+                    </div>
+                    <div class="feedback">
+                        <i class="material-icons" class="likethree" onclick="likethree()">thumb_up
+                        </i></a><span class="likethree-number">0</span>
+                       <i class="material-icons" class="dislikethree" onclick="dislikethree()">thumb_down
+                        </i> </a><span class="dislikethree-number">0</span>
+                    </div>
+                    <hr>
+                    <div class="comment">
+                        <h4>:alireza</h4>
+                        <p>1400 <span>آذر</span> 21</p>
+                        <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                            فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود </h6>
+                    </div>
+                    <div class="feedback">
+                        <i class="material-icons" class="likefour" onclick="likefour()">thumb_up
+                        </i></a><span class="likefour-number">0</span>
+                       <i class="material-icons" class="dislikefour" onclick="dislikefour()">thumb_down
+                        </i> </a><span class="dislikefour-number">0</span>
+                    </div>
+                    <hr>
+                    <div class="comment">
+                        <h4>:alireza</h4>
+                        <p>1400 <span>آذر</span> 21</p>
+                        <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                            فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود </h6>
+                    </div>
+                    <div class="feedback">
+                        <i class="material-icons" class="likefive" onclick="likefive()">thumb_up
+                        </i></a><span class="likefive-number">0</span>
+                       <i class="material-icons" class="dislikefive" onclick="dislikefive()">thumb_down
+                        </i> </a><span class="dislikefive-number">0</span>
+                    </div>
+                    <hr>
                 </div>
-                <div class="right col-lg-5 col-md-5 col-sm-12 col-12">
-                    <h2>باشگاه مشتریان صدر</h2>
-                    <h4>یک عضویت <span>...</span> هزاران مزیت</h4>
-                    <p> .لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-                        از طراحان گرافیک است</p>
-                    <button class="btn">عضویت</button>
+                <div class="space col-lg-1 col-md-1"></div>
+                <div class="right col-lg-4 col-md-4 col-sm-12 col-12" id="rast">
+                    <div class="point">
+                        <h3> 5/<span>4.2</span></h3>
+                    </div>
+                    <div class="discription">
+                        <p>از مجموع 230 امتیاز</p>
+                    </div>
+                    <div class="barone bar">
+                        <h4>دقت و عملکرد</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-info progress-bar-animated progress-bar-striped"
+                                style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="bartwo bar">
+                        <h4>خوش دست بودن</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-info progress-bar-animated progress-bar-striped"
+                                style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="barthree bar">
+                        <h4>طراحی و کیفیت ساخت</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-info progress-bar-animated progress-bar-striped"
+                                style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="barfour bar">
+                        <h4>امکانات و قابلیت ها</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-info progress-bar-animated progress-bar-striped"
+                                style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="barfive bar">
+                        <h4>ارزش خرید در برابر قیمت</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-info progress-bar-animated progress-bar-striped"
+                                style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <div class="commenting">
+                        <h6>.دیدگاه خود را راجب این کالا بیان کنید</h6>
+                        <button onclick="signIn()">افزودن نظر</button>
+                    </div>
+                    <div class="sign-in">
+                        <h4>.برای افزودن نظر دارد حساب کاربری خود شوید</h4>
+                        <h6> :ایمیل یا نام کاربری</h6><input type="text" id="email">
+                        <h6> :رمز</h6><input type="text" id="password">
+                        <button onclick="validate()" class="enter">ورود</button>
+                        <p id="eror"></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end web club section  -->
-
-    <!-- start web about section  -->
-    <div class="web-about-section">
-        <div class="container">
-            <div class="row">
-                <div class="first col-lg-3 col-md-3 col-sm-6 col-6">
-                    <div class="left">
-                        <img src="images/Artboard 5@2x.png">
-                    </div>
-                    <div class="right">
-                        <p>:محصولات</p>
-                        <h4 class="web-counter-number">2800</h4>
-                    </div>
-                </div>
-                <div class="first col-lg-3 col-md-3 col-sm-6 col-6">
-                    <div class="left">
-                        <img src="images/Artboard 7@2x.png">
-                    </div>
-                    <div class="right">
-                        <p>:کارکنان</p>
-                        <h4 class="web-counter-number">1600</h4>
-                    </div>
-                </div>
-                <div class="first col-lg-3 col-md-3 col-sm-6 col-6">
-                    <div class="left">
-                        <img src="images/Artboard 6@2x.png">
-                    </div>
-                    <div>
-                        <div class="right">
-                            <p>:شعب</p>
-                            <h4 class="web-counter-number">1450</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="second col-lg-3 col-md-3 col-sm-6 col-6">
-                    <div class="right">
-                        <p>31:استان</p>
-                        <p>132:شهر</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end web about section  -->
-
-    <!-- start web event section  -->
-    <div class="web-event-section">
-        <div class="container">
-            <div class="p">
-                <h4>جشنواره ها</h4>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card">
-                        <img src="images/Artboard 8 @2x.png" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                قرعه کشی خودرو
-                            </h4>
-                            <button class="btn">جشنواره به پایان رسیده</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card">
-                        <img src="images/Artboard 10@2x.png" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                بازگشایی مدارس
-                            </h4>
-                            <button class="btn">جشنواره به پایان رسیده</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="card">
-                        <img src="images/Artboard 9@2x.png" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                رمضان
-                            </h4>
-                            <button class="btn">جشنواره به پایان رسیده</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="buttons">
-                <button class="btn">مشاهده همه</button>
-                <button class="btn">جستجوی برندگان</button>
-            </div>
-        </div>
-    </div>
-    <!-- end web event section  -->
+    <!-- end web comment section -->
 
     <!-- start web footer section  -->
     <div class="web-footer-section">
@@ -718,13 +681,10 @@
     </div>
     <!-- end web footer section  -->
 
-
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/all.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/main2.js"></script>
 </body>
