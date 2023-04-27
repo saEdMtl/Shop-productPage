@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
     <link href='https://css.gg/search.css' rel='stylesheet'>
     <link href='https://css.gg/check-o.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -26,7 +25,7 @@
             <div class="first-line">
                 <div class="row first-row">
                     <div class="left col-lg-4 col-md-6 col-sm-6 col-6">
-                        <a href="#"><i class="gg-shopping-cart"></i></a>
+                        <a href="#"><img src="images/cart.png"></a>
                         <span>|</span>
                         <button type="button"><span>ورود به حساب کاربری</span><i
                                 class="large material-icons">account_circle</i></button>
@@ -48,42 +47,11 @@
                                 <div class="third-hamburger-line hamburger-line"></div>
                             </label>
                         </div>
-                        <div class="hamburger-nav">
+                        <div class="hamburger-nav" id="right">
                             <div class="row">
-                                <div class="right col-lg-6 col-md-6 col-sm-12 col-12" id="right">
+                                <div class="right col-lg-6 col-md-6 col-sm-12 col-12" >
                                     <ul>
-                                        <li>
-                                            <div id="group-collapse">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h4><a href="#collapse-1" data-toggle="collapse">+ دسته بندی
-                                                                ها</a></h4>
-                                                    </div>
-                                                    <div id="collapse-1" class="collapse" data-parent="#group-collapse">
-                                                        <div class="card-body">
-                                                            <div class="card-text">
-                                                                <ul>
-                                                                    <li><a href="#">تلویزیون</a></li>
-                                                                    <li><a href="#">کنسول بازی</a></li>
-                                                                    <li><a href="#">ساعت هوشمند</a></li>
-                                                                    <li><a href="#">اسپیکر</a></li>
-                                                                    <li><a href="#">فلش و هارد</a></li>
-                                                                    <li><a href="#">تبلت</a></li>
-                                                                    <li><a href="#">لوازم جانبی لپ تاپ</a></li>
-                                                                    <li><a href="#">هدفون</a></li>
-                                                                    <li><a href="#">هندزفری</a></li>
-                                                                    <li><a href="#">لوازم اداری</a></li>
-                                                                    <li><a href="#">لپ تاپ</a></li>
-                                                                    <li><a href="#">لوازم جانبی دوربین</a></li>
-                                                                    <li><a href="#">موبایل</a></li>
-                                                                    <li><a href="#">لوازم جانبی موبایل</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
+                                        <li><a href="#">دسته بندی ها</a></li>
                                         <li><a href="#">تخفیف ها و پیشنهاد ها<i class="fa fa-percent"
                                                     aria-hidden="true"></i>
                                             </a></li>
@@ -212,7 +180,7 @@
                         </ul>
                     </div>
                     <div class="left-replace col-lg-4 col-md-6 col-sm-6 col-6">
-                        <a href="#"><i class="gg-shopping-cart"></i></a>
+                        <a href="#"><img src="images/cart.png"></a>
                         <span>|</span>
                         <button type="button"><span>ورود به حساب کاربری</span><i
                                 class="large material-icons">account_circle</i></button>
@@ -489,7 +457,7 @@
                     <div class="feedback">
                         <i class="material-icons" class="likeone" onclick="likeone()">thumb_up
                         </i></a><span class="likeone-number">0</span>
-                       <i class="material-icons" class="dislikeone" onclick="dislikeone()"> thumb_down
+                        <i class="material-icons" class="dislikeone" onclick="dislikeone()"> thumb_down
                         </i> </a><span class="dislikeone-number">0</span>
                     </div>
                     <hr>
@@ -503,7 +471,7 @@
                     <div class="feedback">
                         <i class="material-icons" class="liketwo" onclick="liketwo()">thumb_up
                         </i></a><span class="liketwo-number">0</span>
-                       <i class="material-icons" class="disliketwo"  onclick="disliketwo()">thumb_down
+                        <i class="material-icons" class="disliketwo" onclick="disliketwo()">thumb_down
                         </i> </a><span class="disliketwo-number">0</span>
                     </div>
                     <hr>
@@ -517,7 +485,7 @@
                     <div class="feedback">
                         <i class="material-icons" class="likethree" onclick="likethree()">thumb_up
                         </i></a><span class="likethree-number">0</span>
-                       <i class="material-icons" class="dislikethree" onclick="dislikethree()">thumb_down
+                        <i class="material-icons" class="dislikethree" onclick="dislikethree()">thumb_down
                         </i> </a><span class="dislikethree-number">0</span>
                     </div>
                     <hr>
@@ -531,7 +499,7 @@
                     <div class="feedback">
                         <i class="material-icons" class="likefour" onclick="likefour()">thumb_up
                         </i></a><span class="likefour-number">0</span>
-                       <i class="material-icons" class="dislikefour" onclick="dislikefour()">thumb_down
+                        <i class="material-icons" class="dislikefour" onclick="dislikefour()">thumb_down
                         </i> </a><span class="dislikefour-number">0</span>
                     </div>
                     <hr>
@@ -545,7 +513,7 @@
                     <div class="feedback">
                         <i class="material-icons" class="likefive" onclick="likefive()">thumb_up
                         </i></a><span class="likefive-number">0</span>
-                       <i class="material-icons" class="dislikefive" onclick="dislikefive()">thumb_down
+                        <i class="material-icons" class="dislikefive" onclick="dislikefive()">thumb_down
                         </i> </a><span class="dislikefive-number">0</span>
                     </div>
                     <hr>

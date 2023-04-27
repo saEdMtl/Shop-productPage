@@ -3,13 +3,9 @@ function goRight() {
     var menu = document.querySelector('#check');
     const mediaQuery = window.matchMedia('(max-width: 768px)');
     if (menu.checked == true) {
-        nav.style.right = 0;
+        nav.style.display = "block";
     } else {
-        if (mediaQuery.matches) {
-            nav.style.right = '-100%';
-        } else {
-            nav.style.right = '-60%';
-        }
+        nav.style.display = "none";
     }
 
 }

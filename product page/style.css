@@ -40,7 +40,7 @@ body {
 
 .web-menu-section {
     width: 100%;
-    height: 15vh;
+    height: 100px;
     background-color: white;
     color: #425664;
     font-family: estedad;
@@ -50,7 +50,7 @@ body {
 .web-header-fixed {
     position: fixed;
     width: 100%;
-    height: 15vh;
+    height: 100px;
     background-color: white;
     color: #425664;
     font-family: estedad;
@@ -63,6 +63,10 @@ body {
     margin-top: -50px;
 }
 
+.web-menu-section .first-line {
+    height: 50px;
+}
+
 .web-menu-section .first-line .first-row {
     height: 9vh;
 }
@@ -72,12 +76,10 @@ body {
     text-align: left;
 }
 
-.web-menu-section .first-line .left a i {
-    text-decoration: none;
-    color: #425664;
-    transform: scale(1.6);
-    padding: 5px;
-    margin-top: 20px;
+.web-menu-section .first-line .left a img {
+    width: 45px;
+    height: 45px;
+    margin: 10px 0 0 0;
 }
 
 .web-menu-section .first-line .left span {
@@ -145,6 +147,11 @@ body {
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 9px;
+}
+
+.web-menu-section .second-line {
+    height: 50px;
+    margin-top: 10px;
 }
 
 .web-menu-section .second-line .left {
@@ -222,16 +229,15 @@ body {
 
 .web-menu-section .second-menu .hamburger-nav {
     position: relative;
-    width: 35vw;
+    width: 50vw;
     z-index: 100;
     height: 100vh;
-    right: -1750px;
+    display: none;
 }
 
 .web-menu-section .second-menu .hamburger-nav .hover {
     background-color: #425664;
     position: fixed !important;
-    right: -55%;
     top: 0px;
     transition: right .5s;
     position: relative;
@@ -246,10 +252,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
-    right: -60%;
+    width: 100%;
     top: 0;
-    transition: right .5s;
+    transition: .5s;
+    left: 50%;
 }
 
 .web-menu-section .second-menu .hamburger-nav .right li {
@@ -316,12 +322,10 @@ body {
     text-align: left;
 }
 
-.web-menu-section .second-line .left-replace a i {
-    text-decoration: none;
-    color: #425664;
-    transform: scale(1.6);
-    padding: 5px;
-    margin-top: 20px;
+.web-menu-section .second-line .left-replace a img {
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
 }
 
 .web-menu-section .second-line .left-replace span {
@@ -425,12 +429,13 @@ body {
 
 .web-product-section {
     margin-top: 50px;
+    height: 270px;
 }
 
 .web-product-section .left {
     background-color: rgb(221, 221, 221);
     border-radius: 5px;
-    height: 35vh;
+    height: 245px;
     padding: 20px;
 }
 
@@ -557,6 +562,7 @@ body {
 
 .web-product-section .center .color {
     display: flex;
+    margin-left: 170px;
 }
 
 .web-product-section .center .color h3 {
@@ -566,7 +572,6 @@ body {
 }
 
 .web-product-section .center .color {
-    right: -50%;
     position: relative;
 }
 
@@ -1186,6 +1191,10 @@ body {
         width: 410px;
     }
 
+    .web-product-section .center .color {
+        margin-left: 140px;
+    }
+
     .web-product-section .center .customers a {
         font-size: 8px;
     }
@@ -1223,6 +1232,7 @@ body {
 
     .web-menu-section {
         margin-bottom: 5px;
+        height: 120px;
     }
 
     .web-menu-section .first-line .first-row {
@@ -1299,16 +1309,16 @@ body {
         font-size: 12px;
     }
 
+    .web-product-section .center .color {
+        margin-left: 70px;
+    }
+
     .web-product-section .center strong {
         right: -23%;
     }
 
     .web-product-section .center h6 {
         right: -20%;
-    }
-
-    .web-product-section .center .color {
-        right: -23%;
     }
 
     .web-product-section .center .color {
@@ -1407,6 +1417,10 @@ body {
         width: 300px;
     }
 
+    .web-menu-section .second-menu .hamburger-nav .right {
+        left: 0;
+    }
+
     .web-menu-section .hamburger-menu {
         right: 20px;
     }
@@ -1427,6 +1441,22 @@ body {
         margin-right: 7px;
     }
 
+    .web-menu-section .second-line .left-replace button span {
+        font-size: 9px;
+    }
+
+    .web-menu-section .second-line .left-replace i {
+        font-size: 18px;
+    }
+
+    .web-product-section {
+        height: 770px;
+    }
+
+    .web-product-section button {
+        height: 50px;
+    }
+
     .web-product-section .center .customers h5 {
         font-size: 10px
     }
@@ -1442,6 +1472,7 @@ body {
     .web-product-section .left-replace {
         display: block;
         margin-top: 20px;
+        height: 295px;
     }
 
     .web-product-section .center strong {
@@ -1454,19 +1485,23 @@ body {
 
     .web-product-section .center .customers {
         position: relative;
-        right: -29%;
+        margin-left: 175px;
     }
 
     .web-product-section .center .color {
-        right: -63%;
+        margin-left: 320px;
     }
 
     .web-product-section .right img {
         margin-top: 10px;
     }
 
+    .web-tab-section {
+        height: 370px;
+    }
+
     .web-tab-section .tab-content #second-tab .right {
-        transform: translate(355px, 55px);
+        transform: translate(325px, 55px);
     }
 
     .web-tab-section .tab-content #second-tab h6 {
@@ -1477,11 +1512,15 @@ body {
         font-size: 13px;
     }
 
+    .web-comment-section .left {
+        height: 890px;
+    }
+
     .web-comment-section .left .comment h6 {
         font-size: 12px;
     }
 
-    .web-comment-section .right .sign-in input{
+    .web-comment-section .right .sign-in input {
         width: 60%;
     }
 
@@ -1496,7 +1535,7 @@ body {
         margin-left: auto;
     }
 
-    .web-comment-section .right .commenting button{
+    .web-comment-section .right .commenting button {
         margin-bottom: 30px;
     }
 
@@ -1522,9 +1561,10 @@ body {
     .web-menu-section .second-line .left-replace i {
         font-size: 19px;
     }
-}
 
-@media screen and (max-width: 540px) {
+    .web-tab-section .tab-content #second-tab .right {
+        transform: translate(265px, 55px);
+    }
 
     .web-menu-section .hamburger-menu {
         width: 30px;
@@ -1568,6 +1608,22 @@ body {
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     }
 
+    .web-product-section .center .customers {
+        margin-left: 150px;
+    }
+
+    .web-product-section .center .color {
+        margin-left: 300px;
+    }
+
+    .web-menu-section .second-line .left-replace button span {
+        font-size: 9px;
+    }
+
+    .web-menu-section .second-line .left-replace i {
+        font-size: 17px;
+    }
+
 }
 
 @media screen and (max-width: 495px) {
@@ -1588,10 +1644,6 @@ body {
         width: 50px;
     }
 
-    .web-menu-section .second-line .left-replace {
-        right: -30px;
-    }
-
     .web-product-section .center strong {
         right: -57%;
     }
@@ -1600,12 +1652,12 @@ body {
         right: -55%;
     }
 
-    .web-product-section .center .color {
-        right: -60%;
+    .web-product-section .center .customers {
+        margin-left: 90px;
     }
 
-    .web-product-section .center .customers {
-        right: -23%;
+    .web-product-section .center .color {
+        margin-left: 270px;
     }
 
 }
@@ -1624,14 +1676,6 @@ body {
         font-size: 12px;
     }
 
-    .web-product-section .center .customers {
-        right: -20%;
-    }
-
-}
-
-@media screen and (max-width: 460px) {
-
     .web-menu-section .first-line .right .search-box input {
         width: 170px;
     }
@@ -1647,13 +1691,17 @@ body {
     .web-swiper-section .swiper .swiper-slide p {
         font-size: 11px;
     }
+
+    .web-product-section .center .customers {
+        margin-left: 60px;
+    }
+
+    .web-product-section .center .color {
+        margin-left: 230px;
+    }
 }
 
 @media screen and (max-width: 450px) {
-
-    .web-menu-section .second-line .left-replace {
-        right: -26px;
-    }
 
     .web-product-section .center strong {
         right: -54%;
@@ -1663,21 +1711,9 @@ body {
         right: -51%;
     }
 
-    .web-product-section .center .color {
-        right: -56%;
-    }
-
-    .web-product-section .center .customers {
-        right: -16%;
-    }
-
 }
 
 @media screen and (max-width: 420px) {
-
-    .web-menu-section .second-line .left-replace {
-        right: -20px;
-    }
 
     .web-product-section .center strong {
         right: -48%;
@@ -1687,16 +1723,16 @@ body {
         right: -45%;
     }
 
-    .web-product-section .center .color {
-        right: -50%;
+    .web-swiper-section .right h4 {
+        font-size: 20px
     }
 
     .web-product-section .center .customers {
-        right: -8%;
+        margin-left: 30px;
     }
 
-    .web-swiper-section .right h4 {
-        font-size: 20px
+    .web-product-section .center .color {
+        margin-left: 200px;
     }
 
 }
